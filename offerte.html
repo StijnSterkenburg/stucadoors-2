@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offerte Aanvragen - StucMeesters (GoHighLevel Template)</title>
+    <!-- Tailwind CSS CDN for GoHighLevel compatibility -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B2036',
+                        accent: '#F97316',
+                        surface: '#F8FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF5F5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-up {
+            animation: fadeUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .delay-100 {
+            animation-delay: 100ms;
+        }
+
+        .delay-200 {
+            animation-delay: 200ms;
+        }
+
+        /* GoHighLevel Breakout */
+        .ghl-container-override {
+            width: 100vw !important;
+            max-width: 100vw !important;
+            position: relative !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    </style>
+</head>
+
+<body class="text-gray-900 overflow-x-hidden p-0 m-0">
+    <div class="ghl-container-override">
+        <!-- NAVIGATION BAR -->
+        <nav class="absolute top-0 left-0 w-full z-50 bg-primary/95 backdrop-blur-md border-b border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                        <img src="logo.png" alt="StucMeesters Logo" class="h-12 w-auto rounded shadow-lg bg-white p-1">
+                        <span class="text-white font-bold text-xl tracking-wide hidden sm:block">StucMeesters</span>
+                    </a>
+                    <div class="hidden md:block">
+                        <div class="flex items-center space-x-6">
+                            <a href="index.html#diensten"
+                                class="text-gray-300 hover:text-white font-medium transition-colors text-sm">Diensten</a>
+                            <a href="index.html#prijzen"
+                                class="text-gray-300 hover:text-white font-medium transition-colors text-sm">Prijzen</a>
+                            <a href="index.html#ervaringen"
+                                class="text-gray-300 hover:text-white font-medium transition-colors text-sm">Reviews</a>
+                            <a href="contact.html"
+                                class="text-gray-300 hover:text-white font-medium transition-colors text-sm">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HEADER SECTION -->
+        <section class="relative h-[35vh] min-h-[250px] w-full flex items-center justify-center pt-20">
+            <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+                style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2070&auto=format&fit=crop');">
+                <div class="absolute inset-0 bg-primary/95"></div>
+            </div>
+            <div class="relative z-10 text-center text-white px-4 animate-fade-up">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Offerte Aanvragen</h1>
+                <p class="text-lg md:text-xl text-gray-400">Ontvang binnen 24 uur een vrijblijvende prijsopgave.</p>
+            </div>
+        </section>
+
+        <!-- MAIN OFFERTE CONTENT -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+                    <!-- Form Area (Larger) -->
+                    <div class="lg:col-span-8 animate-fade-up delay-100">
+                        <div
+                            class="bg-gray-50 p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100 relative overflow-hidden">
+                            <!-- ACCENT BAR -->
+                            <div class="absolute top-0 left-0 w-full h-2 bg-orange-500"></div>
+
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">Uw gegevens voor de offerte</h2>
+                            <p class="text-gray-500 mb-8">Vul het onderstaande formulier zo volledig mogelijk in. We
+                                bellen u als we extra vragen hebben.</p>
+
+                            <!-- GHL FORM EMBED AREA -->
+                            <div
+                                class="bg-white p-8 rounded-lg border-2 border-dashed border-orange-200 text-center min-h-[500px] flex flex-col justify-center items-center hover:bg-orange-50 transition-colors">
+                                <div
+                                    class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mb-4">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="text-orange-900 font-bold mb-2 text-lg">🔗 GoHighLevel Offerteformulier</p>
+                                <p class="text-gray-600 max-w-sm">Vervang dit hele grijze/oranje blok met de embed code
+                                    van uw GoHighLevel formulier voor naadloze lead capture.</p>
+                                <!-- [PLAK_HIER_DE_MEEGELEVERDE_GHL_EMBED_CODE] -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Area -->
+                    <div class="lg:col-span-4 animate-fade-up delay-200">
+                        <div
+                            class="bg-primary rounded-2xl p-8 text-white shadow-xl h-full flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-8 border-b border-white/10 pb-4">Hoe het
+                                    werkt</h3>
+
+                                <div class="space-y-8">
+                                    <div class="flex gap-4">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center font-bold text-white shrink-0 shadow-lg">
+                                            1</div>
+                                        <div>
+                                            <h4 class="font-bold mb-1">Vul uw gegevens in</h4>
+                                            <p class="text-sm text-gray-400">Laat ons weten om hoeveel m² het (ongeveer)
+                                                gaat en wat uw wensen zijn.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center font-bold text-white shrink-0 shadow-lg">
+                                            2</div>
+                                        <div>
+                                            <h4 class="font-bold mb-1">Wij nemen contact op</h4>
+                                            <p class="text-sm text-gray-400">Binnen 24 uur bellen we u op om de aanvraag
+                                                door te nemen of een afspraak te plannen.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center font-bold text-white shrink-0 shadow-lg">
+                                            3</div>
+                                        <div>
+                                            <h4 class="font-bold mb-1">Transparante offerte</h4>
+                                            <p class="text-sm text-gray-400">U ontvangt een heldere prijsopgave zonder
+                                                verrassingen achteraf.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-12 bg-white/5 rounded-xl p-6 border border-white/10">
+                                <p class="text-sm italic text-gray-300 text-center mb-4">"Super heldere communicatie en
+                                    ze kwamen hun prijsafspraken precies na."</p>
+                                <div class="flex justify-center text-orange-400">★★★★★</div>
+                                <p class="text-xs text-center text-gray-500 mt-2">- Familie De Wit, Zaandam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-gray-900 text-gray-300 py-16 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <div class="col-span-1 md:col-span-1">
+                        <h3 class="text-2xl font-bold text-white mb-4">StucMeesters</h3>
+                        <p class="mb-6 max-w-sm">Dé specialist in loeistrak stucwerk, dunpleister en airless latex
+                            spuiten. Altijd voor een all-in prijs.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white mb-4">Snelle Links</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="index.html" class="hover:text-orange-500 transition-colors">Homepagina</a></li>
+                            <li><a href="index.html#prijzen" class="hover:text-orange-500 transition-colors">Onze
+                                    Prijzen</a></li>
+                            <li><a href="index.html#ervaringen"
+                                    class="hover:text-orange-500 transition-colors">Beoordelingen</a></li>
+                            <li><a href="contact.html" class="hover:text-orange-500 transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white mb-4">Contact</h4>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>030 - 765 43 21</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white mb-4">Openingstijden</h4>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <span>Ma t/m vrij 7:00-20:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            const targets = document.querySelectorAll('.animate-fade-up');
+            targets.forEach((target) => {
+                target.style.animationPlayState = 'paused';
+                observer.observe(target);
+            });
+        });
+    </script>
+</body>
+
+</html>
